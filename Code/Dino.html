@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Love</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 45px;
+        line-height: 45px;
+        color: darkslategray;
+      }
+
+      h2 {
+        color: darkslategray;
+      }
+
+      hr {
+        height: 1px;
+        background-color: #9d0b0b;
+        border: none;
+      }
+
+      .love {
+        color: #9d0b0b;
+        font-style: italic;
+      }
+
+      .allo {
+        color: #9d0b0b;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .des {
+        display: block;
+        padding: 10px 50px 10px 50px;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        background: linear-gradient(
+          120deg,
+          rgba(249, 255, 6, 1) 0%,
+          rgba(255, 2, 83, 1) 65%,
+          rgba(143, 0, 0, 1) 100%
+        );
+      }
+
+      .wiki {
+        text-align: center;
+        font-size: 16px;
+        color: darkslategrey;
+      }
+
+      .buy {
+        display: block;
+        padding: 15px 25px;
+        margin: 30px auto 10px;
+        color: #9d0b0b;
+        background: #eb8242;
+        font-size: 14px;
+        border: 1px solid #9d0b0b;
+        border-radius: 50px;
+        box-shadow: 4px 6px 4px 1px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #9d0b0b;
+        color: #eb8242;
+        cursor: pointer;
+      }
+
+      .lenght {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 100;
+        text-decoration: underline;
+      }
+
+      .cod {
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+        color: #da2d2d;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>🐱‍🐉 I <span class="love">love</span> dinosaurs! 🐱‍🐉</h1>
+      <h2>Especially <span class="allo">Allosaurus</span></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/115/original/Allosaurus_Revised.jpg?1652362668"
+        width="600"
+      />
+      <hr />
+      <p class="des">
+        <strong>Allosaurus</strong> is a genus of large carnosaurian theropod
+        dinosaur that lived 155 to 145 million years ago during the Late
+        Jurassic epoch (Kimmeridgian to late Tithonian). The name "Allosaurus"
+        means "different lizard" alluding to its unique (at the time of its
+        discovery) concave vertebrae. It is derived from the Greek ἄλλος (allos)
+        ("different, other") and σαῦρος (sauros) ("lizard / generic reptile").
+        The first fossil remains that could definitively be ascribed to this
+        genus were described in 1877 by paleontologist Othniel Charles Marsh. As
+        one of the first well-known theropod dinosaurs, it has long attracted
+        attention outside of paleontological circles.
+      </p>
+      <p class="wiki">
+        <strong
+          >Learn more abaut
+          <a href="https://en.wikipedia.org/wiki/Allosaurus" target="_blank"
+            ><em>Allosaurus!</em></a
+          ></strong
+        >
+      </p>
+      <button class="buy"><strong>Buy a 50L skeleton model!</strong></button>
+      <p class="lenght">
+        ✔Model lenght from edge off a skull to tip off a tail is
+        <span>50cm</span>.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/118/original/1920px-Allosaurus_jimmadseni_skeletal.png?1652363071"
+        width="300"
+      />
+      <hr />
+      <p class="cod">
+        Coded by <br />
+        Malwina Flis
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let mail = prompt("What is your e-mail?");
+        let age = prompt("What is your age?");
+        if (age < 18) {
+          alert(
+            "😢Sorry " + name + " you are to young, ask your parents to buy!"
+          );
+        } else {
+          alert(
+            "😁Thank you " +
+              name +
+              " for order! We will contact you by e-mail for details!"
+          );
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
